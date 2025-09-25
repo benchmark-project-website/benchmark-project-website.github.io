@@ -1,0 +1,5 @@
+Model,Version,Pass@1 (%),Build success (%),APK size (MB),Avg gen time (s),Eval date,Eval protocol
+GPT-5-Android,2025-07,62.5,81.0,23.4,138,2025-08-01,v1.0
+DeepSeek-AndroidXL,2025-06,58.1,77.2,24.8,151,2025-07-28,v1.0
+Claude-Next-Mobile,2025-06,55.7,79.3,22.9,160,2025-07-20,v1.0
+Llama-4.1-Code,2025-07,47.9,70.6,26.3,172,2025-07-18,v1.0
