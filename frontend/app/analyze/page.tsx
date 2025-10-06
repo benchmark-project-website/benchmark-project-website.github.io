@@ -12,7 +12,7 @@ export default function AnalyzePage() {
           <p className="text-gray-700 mt-2 max-w-4xl">
             We summarize key findings on <span className="font-medium">AppForge-Bench</span> with figures and tables from the paper.
             Overall, even frontier LLMs achieve modest success on full Android app development, while compilation
-            feedback improves compile rates but not functional correctness proportionally. :contentReference[oaicite:0]{index=0}
+            feedback improves compile rates but not functional correctness proportionally.
           </p>
         </div>
       </section>
@@ -23,20 +23,20 @@ export default function AnalyzePage() {
           <h2 className="h2">Key Findings</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
             <li>
-              <span className="font-medium">End-to-end development is hard:</span> best-performing model only reaches a
-              sub-20% functional success rate; many generated apps still crash at runtime even after passing tests. :contentReference[oaicite:1]{index=1}
+              <span className="font-medium">End-to-end development is hard:</span> the best-performing model reaches
+              sub-20% functional success; many generated apps still crash at runtime even after passing tests.
             </li>
             <li>
               <span className="font-medium">Compilation feedback helps compile rate</span> (large jumps for some models),
-              yet <span className="italic">test pass</span> and <span className="italic">success</span> saturate after a few iterations. :contentReference[oaicite:2]{index=2}
+              yet <span className="italic">Test Pass</span> and <span className="italic">Success</span> saturate after a few rounds.
             </li>
             <li>
               <span className="font-medium">Task complexity matters:</span> success decreases as LOC grows; simple apps can be
-              robust with proactive exception handling. :contentReference[oaicite:3]{index=3}
+              robust with proactive exception handling.
             </li>
             <li>
-              <span className="font-medium">“Evasion” behaviors:</span> some models delete faulty logic to pass compilation, harming
-              functionality and runtime start-up. :contentReference[oaicite:4]{index=4}
+              <span className="font-medium">Evasion behaviors:</span> some models delete faulty logic merely to pass compilation,
+              harming functionality and increasing fail-to-start cases.
             </li>
           </ul>
         </div>
@@ -52,14 +52,14 @@ export default function AnalyzePage() {
             <Figure
               src="/analyze/categories_pie.png"
               alt="Category distribution"
-              title="Figure · Category Distribution"
-              caption="AppForge tasks cover diverse Android app domains to reflect real practice."
+              title="Category Distribution"
+              caption="AppForge tasks cover diverse Android domains to reflect real practice."
             />
             <Figure
               src="/analyze/iter_refinement.png"
               alt="Iteration refinement effectiveness"
-              title="Figure · Iterative Refinement"
-              caption="Compilation rate increases over rounds, while Test-Pass/Success saturate after 2–3 iterations."
+              title="Iterative Refinement"
+              caption="Compilation rises rapidly; Test-Pass/Success saturate after 2–3 iterations."
             />
           </div>
 
@@ -68,14 +68,14 @@ export default function AnalyzePage() {
             <Figure
               src="/analyze/loc_correlation.png"
               alt="LOC vs metrics"
-              title="Figure · LOC vs. Metrics"
-              caption="Higher complexity (more LOC) correlates with lower success; rolling means shown with uncertainty bands."
+              title="LOC vs Metrics"
+              caption="Higher complexity (more LOC) correlates with lower success; rolling means with uncertainty bands."
             />
             <Figure
               src="/analyze/pairwise_heatmaps.png"
-              alt="Pairwise variance SWE vs AppForge"
-              title="Figure · Model Differentiation"
-              caption="AppForge provides stronger inter-model separation than SWE-bench on relative performance."
+              alt="Pairwise variance"
+              title="Model Differentiation"
+              caption="AppForge offers stronger inter-model separation compared to generic coding benchmarks."
             />
           </div>
 
@@ -84,13 +84,13 @@ export default function AnalyzePage() {
             <Figure
               src="/analyze/compile_error_pies.png"
               alt="Compilation error distribution"
-              title="Figure · Compilation Errors"
-              caption="Android resource linking and related issues dominate; refinement shifts distribution but leaves residual failures."
+              title="Compilation Errors"
+              caption="Android resource linking and related issues dominate; refinement shifts the distribution."
             />
             <Figure
               src="/analyze/gpt5_defensive_code.png"
               alt="Defensive programming example"
-              title="Figure · Defensive Programming"
+              title="Defensive Programming"
               caption="Successful cases show proactive exception handling (e.g., fallback intents for settings navigation)."
             />
           </div>
@@ -103,10 +103,7 @@ export default function AnalyzePage() {
           <h2 className="h2">Tables</h2>
 
           {/* Table 2 */}
-          <PaperCard
-            title="Table 2 · Performance of Coding Agents on AppForge"
-            note="SWE = mini-SWE-agent; CC = Claude Code."
-          >
+          <PaperCard title="Table 2 · Performance of Coding Agents on AppForge" note="SWE = mini-SWE-agent; CC = Claude Code.">
             <div className="overflow-x-auto">
               <table className="w-full min-w-[720px] border-separate border-spacing-0">
                 <thead>
@@ -151,9 +148,7 @@ export default function AnalyzePage() {
                 </tbody>
               </table>
             </div>
-            <Caption>
-              Agent frameworks provide modest gains at non-trivial cost; absolute success remains low. :contentReference[oaicite:5]{index=5}
-            </Caption>
+            <Caption>Agent frameworks provide modest gains; absolute success remains low.</Caption>
           </PaperCard>
 
           {/* Table 3 */}
@@ -198,9 +193,7 @@ export default function AnalyzePage() {
                 </tbody>
               </table>
             </div>
-            <Caption>
-              Increasing reasoning helps across metrics, but still far from practical for Android development. :contentReference[oaicite:6]{index=6}
-            </Caption>
+            <Caption>More reasoning helps across metrics but still far from practical Android development.</Caption>
           </PaperCard>
 
           {/* Table 4 */}
@@ -248,13 +241,11 @@ export default function AnalyzePage() {
                 </tbody>
               </table>
             </div>
-            <Caption>
-              Evasive “compile-only” fixes often backfire at runtime (e.g., fail-to-start spikes), while many crashes are native rather than Java exceptions. :contentReference[oaicite:7]{index=7}
-            </Caption>
+            <Caption>Evasive “compile-only” fixes often backfire at runtime; many crashes are native.</Caption>
           </PaperCard>
 
           <p className="text-xs text-gray-500">
-            * Percentages shown as %; tables/typesetting are faithful to the paper but simplified for web readability.
+            * Percentages shown as %; web tables are simplified for readability. See Docs for the full paper.
           </p>
         </div>
       </section>
