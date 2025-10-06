@@ -1,3 +1,4 @@
 # AppForge Bench Docs
 
-Welcome! Replace this placeholder with your real documentation.
+Welcome to the AppForge Benchmark documentation!  
+This site provides dataset details, evaluation guidelines, and leaderboard access.
