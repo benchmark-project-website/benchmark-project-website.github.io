@@ -79,3 +79,10 @@ If you don't have access to the provided model options, you can:
 * Use `--model=naive` to apply a baseline that makes no change to the base template.
 
 > ℹ️ More detailed running parameters are available in the source code.
+
+
+---
+
+#### 📦 Downloads
+[⬇️ Download AppForge.zip](https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge.zip){ .md-button .md-button--primary }
+[⬇️ Download AppForge_Bench.zip](https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge_Bench.zip){ .md-button }
