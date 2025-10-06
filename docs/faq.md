@@ -1,4 +1,4 @@
 # Frequently Asked Questions
 
-## Q:TBD
-### A:...
+## Q: TBD
+### A: ...
