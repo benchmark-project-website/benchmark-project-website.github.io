@@ -1,17 +1,22 @@
-
 site_name: AppForge Bench Docs
 site_url: https://benchmark-project-website.github.io/AppForge-Bench/
+
 theme:
   name: material
+
 nav:
-  - Getting Started: index.md
-  - Download: getting-started.md
-    - AppForge.zip: https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge.zip
-    - AppForge_Bench.zip: https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge_Bench.zip
-  - FAQ: api.md
+  - Home: index.md
+  - Downloads:
+      - "AppForge.zip": "https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge.zip"
+      - "AppForge_Bench.zip": "https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge_Bench.zip"
+  - API: api.md
+
+plugins:
+  - search
+
 markdown_extensions:
   - admonition
-  - codehilite
+  - attr_list
   - footnotes
   - toc:
       permalink: true
