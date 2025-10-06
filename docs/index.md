@@ -16,7 +16,7 @@ Unzip the benchmark package and install dependencies:
 ```bash
 cd AppForge_Bench
 pip install -r requirements.txt
-````
+```
 
 ---
 
