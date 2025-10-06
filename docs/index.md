@@ -1,48 +1,81 @@
-# AppForge Bench Docs
 
-Welcome to the AppForge Benchmark documentation!  
-This site provides dataset details, evaluation guidelines, and leaderboard access.
+# 🧩 AppForge-Bench
 
-# Get Started
+A benchmark suite for **LLM-based Android application synthesis and testing**.  
+AppForge-Bench provides reproducible environments, Android emulator integration, and self-fix mechanisms for evaluating code generation and UI behavior across large-scale Android apps.
 
-### Prerequisite
+---
 
-Make sure you have Android Emulator and SDK installed on your machine.
+## 🚀 Quick Start
 
-Unzip *AppForge_Bench.zip* and install requirements.
+### 🔧 Prerequisite
+Make sure you have **Android Emulator** and **Android SDK** installed on your machine.
 
-```
+Unzip the benchmark package and install dependencies:
+
+```bash
 cd AppForge_Bench
 pip install -r requirements.txt
-```
+````
 
-### Environment Setup
+---
 
-You can install our module **AppForge** through:
+### ⚙️ Environment Setup
 
-```python
+You can install our module **AppForge** in editable mode:
+
+```bash
 cd AppForge
 pip install -e .[example]
 ```
 
-### Quick Start Example
+---
 
-We provide an example with *test.py* under *examples*. A quick test with qwen3coder can be run through 
+### 🧠 Example Run
 
+We provide an example script `test.py` under the `examples/` folder.
+
+A quick test with **qwen3coder** can be executed using:
+
+```bash
+python examples/test.py \
+  --emulator_id <emulator_id> \
+  --bench_folder <path_to_AppForge_Bench> \
+  --sdk_path <sdk_path> \
+  --model qwen3coder \
+  --runs example_qwen3 \
+  --api_key_path <api_key_path> \
+  --start_id 0 \
+  --end_id 1
 ```
-python examples/test.py --emulator_id <emulator_id> --bench_folder <position_where_you_pull_the_AppBench_Forge> --sdk_path <sdk_path> \
---model=qwen3coder --runs=example_qwen3 --api_key_path=<api_key_path> --start_id 0 --end_id 1 
+
+**Example on our machine:**
+
+```bash
+python examples/test.py \
+  --emulator_id emulator-5554 \
+  --bench_folder /mnt/AppForge-Bench \
+  --sdk_path /home/Android/sdk \
+  --model qwen3coder \
+  --runs example_qwen3 \
+  --api_key_path dash_scope.key \
+  --start_id 0 \
+  --end_id 1
 ```
 
-For example on our machine we run following command:
+---
 
+### 🧩 Optional: Self-Fix with Compilation Feedback
+
+To activate self-fix (automatic repair using compilation feedback), set the parameter:
+
+```bash
+--self_fix_attempts <N>
 ```
-python examples/test.py --emulator_id  emulator-5554 --bench_folder /mnt/AppForge-Bench --sdk_path /home/Android/sdk \
---model=qwen3coder --runs=example_qwen3 --api_key_path=dash_scope.key --start_id 0 --end_id 1 
-```
 
-To activate self-fix with compilation feedback, set parameter *--self_fix_attempts*. If you don't have access to model options we provide, you can add more models or just use *--model=naive* to use a naive solution of making no change on the base template instead.
+If you don't have access to the provided model options, you can:
 
-More detailed running parameters can be seen in the source code.
+* Add your own model integration, **or**
+* Use `--model=naive` to apply a baseline that makes no change to the base template.
 
-
+> ℹ️ More detailed running parameters are available in the source code.
