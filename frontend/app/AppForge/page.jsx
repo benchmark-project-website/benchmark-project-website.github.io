@@ -57,20 +57,19 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      {/* Overview figures: two images with captions */}
+      {/* Overview figures: side-by-side layout */}
       <section className="bg-transparent">
         <div className="container pt-3 pb-0">
-          <div className="mx-auto max-w-3xl space-y-6">
+          <div className="flex flex-col md:flex-row justify-center gap-6 mx-auto max-w-6xl">
       
             {/* Figure 1: Construction of AppForge */}
-            <figure className="rounded-xl border border-gray-200 bg-white p-3">
+            <figure className="flex-1 rounded-xl border border-gray-200 bg-white p-3">
               <Image
                 src="/assets/appforge_construction.png"
                 alt="Construction of AppForge"
-                width={1200}
-                height={800}
+                width={800}
+                height={600}
                 className="block w-full h-auto rounded-lg shadow"
-                priority={false}
               />
               <figcaption className="text-center text-sm text-gray-600 mt-2">
                 <strong>Figure 1.</strong> Construction of AppForge.
@@ -78,14 +77,13 @@ export default function Page() {
             </figure>
       
             {/* Figure 2: Workflow of AppForge */}
-            <figure className="rounded-xl border border-gray-200 bg-white p-3">
+            <figure className="flex-1 rounded-xl border border-gray-200 bg-white p-3">
               <Image
                 src="/assets/appforge_workflow.png"
                 alt="Workflow of AppForge"
-                width={1200}
-                height={800}
+                width={800}
+                height={600}
                 className="block w-full h-auto rounded-lg shadow"
-                priority={false}
               />
               <figcaption className="text-center text-sm text-gray-600 mt-2">
                 <strong>Figure 2.</strong> Workflow of AppForge.
@@ -95,6 +93,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
 
       {/* Demo: portrait comparison grid */}
       <section className="section">
