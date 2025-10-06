@@ -1,3 +1,3 @@
-## API
+## Frequently Asked Questions
 
-API reference placeholder.
+...
