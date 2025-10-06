@@ -128,9 +128,6 @@ export default function Page() {
           <h2 className="h2">Resources</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li><a className="hover:underline" href="/AppForge-Bench/">Documentation</a></li>
-            <li><a className="hover:underline" href="https://github.com/AppForge-Bench" target="_blank">GitHub Organization</a></li>
-            <li><a className="hover:underline" href="https://huggingface.co" target="_blank">Datasets on Hugging Face (placeholder)</a></li>
-            <li><a className="hover:underline" href="/citations">Citations</a></li>
           </ul>
         </div>
       </section>
