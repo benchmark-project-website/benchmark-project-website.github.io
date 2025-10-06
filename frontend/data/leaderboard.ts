@@ -40,5 +40,5 @@ export const rows: Row[] = [
     files_cf: 5.10,  loc_cf: 168.60, compile_cf: 41.58, test_cf: 7.76, crash_cf: 69.05, success_cf: 1.98 },
   { model: "Qwen3-Coder", group: "open",
     files_p1: 5.29,  loc_p1: 209.00, compile_p1: 27.72, test_p1: 4.42, crash_p1: 75.00, success_p1: 1.98,
-    files_cf: 6.20,  loc_cf: 241.21, compile_cf: 85.15, test_cf: 21.45, crash_cf: 29.07, success_p1: 8.91 },
+    files_cf: 6.20,  loc_cf: 241.21, compile_cf: 85.15, test_cf: 21.45, crash_cf: 29.07, success_cf: 8.91 },
 ];
