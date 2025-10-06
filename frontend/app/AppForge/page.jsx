@@ -57,18 +57,41 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      {/* Overview image - centered & same width as text */}
+      {/* Overview figures: two images with captions */}
       <section className="bg-transparent">
         <div className="container pt-3 pb-0">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-3xl space-y-6">
+      
+            {/* Figure 1: Construction of AppForge */}
             <figure className="rounded-xl border border-gray-200 bg-white p-3">
-              <img
-                src="/assets/overview.png"
-                alt="AppForge workflow diagram"
+              <Image
+                src="/assets/appforge_construction.png"
+                alt="Construction of AppForge"
+                width={1200}
+                height={800}
                 className="block w-full h-auto rounded-lg shadow"
-                loading="lazy"
+                priority={false}
               />
+              <figcaption className="text-center text-sm text-gray-600 mt-2">
+                <strong>Figure 1.</strong> Construction of AppForge.
+              </figcaption>
             </figure>
+      
+            {/* Figure 2: Workflow of AppForge */}
+            <figure className="rounded-xl border border-gray-200 bg-white p-3">
+              <Image
+                src="/assets/appforge_workflow.png"
+                alt="Workflow of AppForge"
+                width={1200}
+                height={800}
+                className="block w-full h-auto rounded-lg shadow"
+                priority={false}
+              />
+              <figcaption className="text-center text-sm text-gray-600 mt-2">
+                <strong>Figure 2.</strong> Workflow of AppForge.
+              </figcaption>
+            </figure>
+      
           </div>
         </div>
       </section>
