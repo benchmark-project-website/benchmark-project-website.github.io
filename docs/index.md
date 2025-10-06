@@ -1,5 +1,5 @@
 
-# 🧩 AppForge-Bench
+# AppForge-Bench
 
 A benchmark suite for **LLM-based Android application synthesis and testing**.  
 AppForge-Bench provides reproducible environments, Android emulator integration, and self-fix mechanisms for evaluating code generation and UI behavior across large-scale Android apps.
