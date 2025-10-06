@@ -26,9 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link className="hover:underline text-white/90 hover:text-white" href="/leaderboard">Leaderboards</Link>
               <Link className="hover:underline text-white/90 hover:text-white" href="/AppForge">AppForge</Link>
               <Link className="hover:underline text-white/90 hover:text-white" href="/AppForge-Bench/">Docs</Link>
-              <Link className="hover:underline text-white/90 hover:text-white" href="/press">Press</Link>
-              <Link className="hover:underline text-white/90 hover:text-white" href="/submit">Submit</Link>
-              <Link className="hover:underline text-white/90 hover:text-white" href="/contact">Contact</Link>
             </nav>
           </div>
         </header>
