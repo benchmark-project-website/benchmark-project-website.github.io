@@ -101,45 +101,8 @@ export default function Page() {
         <div className="container space-y-4">
           <h2 className="h2">Demo</h2>
           <p className="text-gray-600">
-            Upload 12 screenshots to <code>frontend/public/demo/&lt;model&gt;/shot1.jpg..shot4.jpg</code> (portrait 9:16 recommended).
+            TBD
           </p>
-
-          <div className="overflow-x-auto">
-            <div style={gridStyle}>
-              <div></div>
-              {shots.map((s, i)=>(
-                <div key={s} style={{ textAlign: "center", fontSize: "12px", color: "#6b7280", paddingTop: "4px" }}>Shot {i+1}</div>
-              ))}
-
-              {models.map((m)=> (
-                <>
-                  {/* label cell */}
-                  <div key={m.key + '-label'} style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: "8px" }}>
-                    <div style={{ textAlign: "right" }}>
-                      <div style={{ fontWeight: 600 }}>{m.title}</div>
-                      <div style={{ fontSize: "12px", color: "#6b7280" }}>LLM output screenshots</div>
-                    </div>
-                  </div>
-
-                  {/* 4 thumbnails (portrait) */}
-                  {shots.map((s)=> (
-                    <div key={m.key + '-' + s} style={thumbWrapStyle}>
-                      <img
-                        src={`/demo/${m.key}/${s}`}
-                        alt={`${m.title} ${s}`}
-                        style={imgStyle}
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ textAlign: "center", fontSize: "12px", color: "#6b7280", marginTop: "8px" }}>
-            Suggested original image ratio: 9:16. Thumbnails are 120px wide and keep portrait orientation.
-          </div>
         </div>
       </section>
 
