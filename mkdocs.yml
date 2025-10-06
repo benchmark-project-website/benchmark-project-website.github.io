@@ -9,7 +9,7 @@ nav:
   - Downloads:
       - "AppForge.zip": "https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge.zip"
       - "AppForge_Bench.zip": "https://github.com/benchmark-project-website/benchmark-project-website.github.io/releases/download/v1.0.0/AppForge_Bench.zip"
-  - API: api.md
+  - FAQ: faq.md
 
 plugins:
   - search
