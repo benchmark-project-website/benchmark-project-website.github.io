@@ -11,7 +11,7 @@ AppForge-Bench provides reproducible environments, Android emulator integration,
 ### 🔧 Prerequisite
 Make sure you have **Android Emulator** and **Android SDK** installed on your machine.
 
-Unzip the benchmark package and install dependencies:
+Unzip the **AppForge_Bench.zip** and install dependencies:
 
 ```bash
 cd AppForge_Bench
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ### ⚙️ Environment Setup
 
-You can install our module **AppForge** in editable mode:
+You can install our module in **AppForge.zip** in editable mode:
 
 ```bash
 cd AppForge
