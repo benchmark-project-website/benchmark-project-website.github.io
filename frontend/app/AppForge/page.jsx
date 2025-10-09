@@ -50,10 +50,10 @@ export default function Page() {
       <section className="section">
         <div className="container space-y-4">
           <p className="text-gray-700">
-            Our benchmark, documentation and reproducible code is available at{" "}
+            Our benchmark, documentation, and reproducible code are available{" "}
             <a
               href="https://benchmark-project-website.github.io/AppForge-Bench/"
-              className="text-blue-600 hover:underline"
+              className="inline-block bg-blue-600 text-white px-2 py-1 rounded-md hover:bg-blue-700 transition"
               target="_blank"
               rel="noopener noreferrer"
             >
