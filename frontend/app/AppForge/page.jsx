@@ -46,10 +46,20 @@ export default function Page() {
         </div>
       </section>
 
-
       {/* Overview */}
       <section className="section">
         <div className="container space-y-4">
+          <p className="text-gray-700">
+            Our benchmark, documentation and reproducible code is available at{" "}
+            <a
+              href="https://benchmark-project-website.github.io/AppForge-Bench/"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>.
+          </p>
           <h2 className="h2">Overview</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>Large language models (LLMs) have demonstrated remarkable capability in function-level code generation tasks. Unlike isolated functions, real-world applications demand reasoning over the entire software system: developers must orchestrate how different components interact, maintain consistency across states over time, and ensure the application behaves correctly within the lifecycle and framework constraints. Yet, no existing benchmark adequately evaluates whether LLMs can bridge this gap and construct entire software systems from scratch. </li>
