@@ -53,7 +53,7 @@ export default function Page() {
             Our benchmark, documentation, and reproducible code are available{" "}
             <a
               href="https://benchmark-project-website.github.io/AppForge-Bench/"
-              className="inline-block bg-blue-600 text-white px-2 py-1 rounded-md hover:bg-blue-700 transition"
+              className="text-blue-600 hover:text-blue-800 underline hover:no-underline font-medium transition"
               target="_blank"
               rel="noopener noreferrer"
             >
